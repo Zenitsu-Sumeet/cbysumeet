@@ -21,43 +21,33 @@ int main()
         }
     }
 
-    printf("Enter the second matrix elenments");
+    printf("\nfirst matrix elenments");
     for (i = 0; i < row; i++)
     {
         for (j = 0; j < col; j++)
         {
-            scanf("%d", &arr1[i][j]);
+            printf("\n%d", arr[i][j]);
         }
     }
 
-    printf("first matrix elenments");
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < col; j++)
-        {
-            printf("%d", arr[i][j]);
-        }
-    }
-    printf("Second matrix elenments");
-    for (i = 0; i < row; i++)
-    {
-        for (j = 0; j < col; j++)
-        {
-            printf("\n%d", arr1[i][j]);
-        }
-        printf("\n");
-    }
-   int max = arr2[i][j];
-    printf("output");
+   int max = arr[0][1];
+   int min = arr[1][0];
+    printf("\noutput");
     for (i = 0; i < row; i++)
     {
         for (j = 0; j < col; j++)
         {      
-        if (arr[i][j] > max)
-            max = arr[i]
+        if (arr[i][j] > max){
+		
+            max = arr[i][j];
         }
-        printf("\n");
+          if (arr[i][j] < min){
+		
+            min = arr[i][j];
+        }
+        }
     }
-    printf(max)
+     printf("\n%d",max);
+       printf("\n%d",min);
     return 0;
 }
